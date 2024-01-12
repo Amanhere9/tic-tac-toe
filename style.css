@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(89, 125, 138);
+}
+
+main h1 {
+  text-align: center;
+  margin: 23px 0;
+  /* position: relative; */
+}
+
+.container {
+  height: 70vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.game-cont {
+  height: 60vmin;
+  width: 60vmin;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5vmin;
+}
+
+.box {
+  height: 18vmin;
+  cursor: pointer;
+  width: 18vmin;
+  border: none;
+  box-shadow: 0px 0px 1rem #adc0bda5;
+  border-radius: 10px;
+  font-size: 8vmin;
+  color: #b0413e;
+  background-color: white;
+}
+
+.reset-btn {
+  padding: 9px;
+  background-color: #191913;
+  color: white;
+  border: none;
+  border-radius: 9px;
+  cursor: pointer;
+  margin-top: 19px;
+  font-size: 1.25rem;
+  /* width: 100% ; */
+}
+
+.msgCont {
+  height: 32px;
+}
+
+.msg {
+  text-align: center;
+  font-size: 30px;
+  color: wheat;
+  margin-top: 10px;
+}
+
+.hide {
+  display: none;
+}
+
+@media screen and (max-width: 400px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .msgCont {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    width: 23%;
+    margin-bottom: 80px;
+    margin-top: 15px;
+  }
+}
